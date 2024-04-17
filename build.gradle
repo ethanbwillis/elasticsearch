@@ -43,6 +43,15 @@ plugins {
   id 'elasticsearch.run-ccs'
   id 'elasticsearch.release-tools'
   id 'elasticsearch.versions'
+  id "org.sonarqube" version "4.4.1.3373"
+}
+
+sonar {
+  properties {
+    property "sonar.projectKey", "ethanbwillis_elasticsearch"
+    property "sonar.organization", "ethanbwillis"
+    property "sonar.host.url", "https://sonarcloud.io"
+  }
 }
 
 /**
